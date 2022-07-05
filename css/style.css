@@ -161,8 +161,15 @@ margin-right: 2rem;
     height: 40px;
     
 }
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
 .icon--primary{
     fill: var(--color-primary);
+}
+.icon--white{
+    fill: var(--color-border);
 }
 
 .icon-container {
@@ -175,6 +182,9 @@ margin-right: 2rem;
     justify-content: center;
     align-items: center;
 
+}
+.icon-container--accent{
+    background-color:var(--color-accent) ;
 }
 /* 按钮 */
 .btn {
@@ -415,11 +425,11 @@ padding: 2rem 3rem;
 
 
 }
-.quote__text::before{
+.quote__text::before {
     content: open-quote;
 
 }
-.quote__text::after{
+.quote__text::after {
     content: close-quote;
 
 }
@@ -437,21 +447,21 @@ padding: 2rem 3rem;
     font-style: normal;
 
 }
-.quote__line{
+.quote__line {
     position: relative;
     bottom: 10px;
 
 }
 @media screen and (min-width:1024px) {
 
-    .quote{
+    .quote {
         font-size: 2rem;
     }
     
-    .quote__author{
+    .quote__author {
         font-size:2.4rem;
     }
-    .quote__organization{
+    .quote__organization {
         font-size:1.6rem;
 
     }
@@ -468,4 +478,34 @@ padding: 2rem 3rem;
         grid-template-columns: 1fr 1fr ;
 
     }
+}
+
+/* 推荐组件 */
+.testimonial{
+    padding: 3rem;
+    
+}
+.testimonial__imge {
+    position: relative;
+}
+.testimonial__imge > img {
+    width: 100%;
+}
+.testimonial__imge > .icon-container  {
+    position: absolute;
+    top: 5rem;
+    right: -32px;
+
+}
+@media screen and (min-width:768px) {
+    .testimonial .quote,
+    .testimonial .quote__author {
+        font-size: 2.4rem;
+
+    }
+    .testimonial.quote {
+        margin-left: 6rem;
+
+    }
+
 }
