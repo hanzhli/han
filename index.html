@@ -24,7 +24,17 @@
           </p>
           <a href="" class="btn btn--accent btn--stretched">Get STARTED</a>
         </header>
-        <img class="hero__image" src="/img/banner.png" alt="装饰图" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="img/banner1x.webp 1x, img/banner2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="img/banner1x.png 1x, img/banner2x.png 2x"
+          />
+          <img class="hero__image" src="/img/banner.png" alt="装饰图" />
+        </picture>
       </div>
     </section>
 
