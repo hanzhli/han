@@ -238,12 +238,12 @@ margin-right: 2rem;
   
   .btn--outline {
     background: #fff;
-    color: var(--color-headings);
-    border: 2px solid var(--color-headings);
+    color: var(--color-heading);
+    border: 2px solid var(--color-heading);
   }
   
   .btn--outline:hover {
-    background: var(--color-headings);
+    background: var(--color-heading);
     color: #fff;
   }
   
@@ -256,6 +256,7 @@ margin-right: 2rem;
     width: 100%;
     display: inline-block;
   }
+
   
   @media screen and (min-width: 1024px) {
     .btn {
@@ -328,7 +329,10 @@ padding: 2rem 3rem;
     color: #fff;
 }
 
-.card--secondary .card--secondary{
+.card--primary .badge--primary{
+    background-color: #123de4;
+}
+.card--secondary .badge--secondary{
     background-color:#02cdf1 ;
 }
 
@@ -337,6 +341,9 @@ padding: 2rem 3rem;
 
 
 /* plan */
+.plan{
+    transition: transform 0.2s ease-out;
+}
 .plan__name{
     color: #fff;
     margin: 0;
@@ -365,6 +372,9 @@ padding: 2rem 3rem;
     margin-bottom: 2rem;
 
 }
+.plan--popular{
+    transform: scale(1.1);
+}
 .plan--popular .card__header{
     position: relative;
 }
@@ -377,9 +387,14 @@ padding: 2rem 3rem;
      right: 5%;
 
 
-
-
 }
+.plan:hover{
+    transform: scale(1.05);
+}
+.plan--popular:hover{
+    transform: scale(1.15);
+}
+
 @media screen and (min-wodth:1024px){
     
     .plan__name{
@@ -477,6 +492,12 @@ padding: 2rem 3rem;
 @media screen and (min-width:768px) {
     .grid--1x2{
         grid-template-columns: 1fr 1fr ;
+
+    }
+}
+@media screen and (min-width:1024px) {
+    .grid--1x3{
+        grid-template-columns: repeat(3,1fr) ;
 
     }
 }
@@ -737,4 +758,18 @@ padding: 2rem 3rem;
     .block-domain__prices{
        grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));
     }
+}
+
+
+
+/* 计划区块 */
+
+
+.block-plans .grid {
+    gap:8rem 4rem;
+
+}
+.block-plans .card{
+    max-width: 500px;
+    margin: 0 auto;
 }
