@@ -161,15 +161,15 @@ margin-right: 2rem;
     height: 40px;
     
 }
-.icon--small{
+.icon--small {
     width: 30px;
     height: 30px;
 }
-.icon--primary{
+.icon--primary {
     fill: var(--color-primary);
 }
-.icon--white{
-    fill: var(--color-border);
+.icon--white {
+    fill: #fff;
 }
 
 .icon-container {
@@ -545,4 +545,35 @@ padding: 2rem 3rem;
         justify-self: start;
         margin: 2rem;
     }
+}
+
+/* 折叠组件 */
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.collapsible__heading{
+    margin: 0;
+    font-size: 3rem;
+
+}
+
+.collapsible__chevron{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.collapsible--expanded .collapsible__chevron{
+    transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content{
+   max-height: 100vh;
+   opacity: 1;
 }
