@@ -15,40 +15,21 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, a sed
-          facere fugit veritatis id in sequi eveniet! Molestias eveniet ea
-          incidunt, placeat nostrum neque rerum fuga iste tempora mollitia?
-        </p>
-      </header>
-      <div style="width: 30%; padding: 4rem">
-        <div class="card card--secondary">
-          <header class="card__header">Card Title</header>
-          <div class="card__body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
-            velit alias pariatur repudiandae autem in dolores nulla perferendis
-            aperiam odit quidem ipsa et provident rerum, adipisci at eius ullam
-            illo.
-          </div>
-        </div>
-      </div>
-   
-     
-        </section>
-        <section class="block block--dark block--skewed-left ">
-          <div class="container">
-            <h2 class="block__heading">Heading</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, a sed
-              facere fugit veritatis id in sequi eveniet! Molestias eveniet ea
-              incidunt, placeat nostrum neque rerum fuga iste tempora mollitia?
-            </p>
-          </div>
-      
-      </div>
+    <nav class="nav collapsible">
+      <a class="nov__brand" href="/"
+        ><img src="/img/logo.svg" alt="首页标签"
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="img/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+
     <script src="/js/main.js"></script>
   </body>
 </html>
