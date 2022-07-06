@@ -1,0 +1,10 @@
+<div style="width: 30%; padding: 4rem">
+  <div class="card card--secondary">
+    <header class="card__header">Card Title</header>
+    <div class="card__body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit
+      alias pariatur repudiandae autem in dolores nulla perferendis aperiam odit
+      quidem ipsa et provident rerum, adipisci at eius ullam illo.
+    </div>
+  </div>
+</div>
