@@ -833,3 +833,86 @@ padding: 2rem 3rem;
         width: auto;
         max-width: 700px;
     }
+/* 底部导航 */
+    .footer{
+        background-color: #232323;
+        padding: 2rem;
+      
+    }
+
+   .footer__section{
+    padding: 2rem;
+    border-bottom: 1px solid #393939
+
+
+   }
+    
+
+   .footer__heading{
+    text-transform: uppercase;
+    font-size: 600;
+
+   }
+
+   .footer__brand{
+
+    margin-top: 5rem;
+    text-align: center;
+   }
+
+   .footer__copyright{
+    font-size: 2.1rem;
+    color: #fff;
+    opacity: 0.3;
+   }
+
+   .footer a {
+    color: #777;
+    font-size: 2rem;
+    transform: color 0.3s;
+   }
+   .footer a:hover{
+    color: #fff;
+   }
+
+   .footer__section .list {
+        margin: 0;
+   }
+   
+   .footer__brand img {
+    width: 100%;
+    max-width:230px ;
+
+
+   }
+  @media screen and (min-width:768px) {
+    .footer__sections{
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+   }
+
+   .footer .collapsible__chevron {
+    display: none;
+   }
+ 
+   .foot .collapsible__content{
+    opacity: 1;
+    max-height: 100%;
+   }
+   .footer__brand{
+    order: -1;
+    margin: 1rem;
+
+   }
+
+   .footer__copyright{
+    font-size: 1.5rem;
+   }
+
+   .footer__section{
+    border:0
+   }
+   .foot__heading{
+    font-size: 1.6rem;
+   }
+
+   }
