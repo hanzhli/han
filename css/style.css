@@ -604,8 +604,8 @@ padding: 2rem 3rem;
 .block{
     --padding-vertical:6rem:
     padding: var(--padding-vertical)   2rem;
-    border: 2px solid red;
-    text-align: center;
+    /* border: 2px solid red;
+    text-align: center; */
 
 }
 .block__header{
@@ -773,3 +773,32 @@ padding: 2rem 3rem;
     max-width: 500px;
     margin: 0 auto;
 }
+
+
+/* 特性区块 */
+
+.feature{
+    gap: 4rem 2rem;
+    margin: 12rem 0 ;
+}
+.feature:first-of-type{
+    margin: 6rem;
+}
+
+.feature__heading{
+    margin:1rem 0;
+}
+
+.feature__imge{
+    width: 100%;
+}
+
+
+    @media screen and (min-width:768px) {
+        .feature:nth-of-type(even) .feature__content{
+            order: 2;
+
+        }
+
+        
+    }
