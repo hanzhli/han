@@ -7,6 +7,11 @@
 
 /* 字体设置为默认浏览器的62.5%对应像素为10px */
 /* 字体 */
+
+::selection{
+    background-color: var(--color-primary);
+    color: #fff;
+}
 html{
     font-size: 62.5%;
 }
@@ -44,6 +49,7 @@ h2{
 }
 h3{
     font-size: 3rem;
+    font-weight: 500;
    
 }
 p{
@@ -130,7 +136,7 @@ margin-left: 10px;
 .list{
     list-style: none;
   padding: 0;
-  color:var(--color-heading);
+  
 
 }
 .list--inline .list__item{
@@ -141,6 +147,7 @@ margin-right: 2rem;
 .list--tick{
     list-style-image: url(/img/tick.svg);
     padding-left: 3rem;
+    color:var(--color-heading);
 }
 .list--tick .list__item{
     padding-left: 0.5rem;
@@ -417,6 +424,7 @@ padding: 2rem 3rem;
 /* 媒体组件 */
 .media{
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title{
@@ -621,16 +629,19 @@ padding: 2rem 3rem;
     color: #7b858b;
 
 }
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+
     color: #fff;
 }
  .block--skewed-right{
     padding-bottom:  calc (var(--padding-vertical ) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
  }
  .block--skewed-left{
     padding-bottom:  calc (var(--padding-vertical ) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
  }
 
  .container{
@@ -706,9 +717,7 @@ padding: 2rem 3rem;
     }
  }
 /* 英雄组件 */
-.hero{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
+
 
 .hero__tagline{
     font-size: 2rem;
@@ -801,4 +810,26 @@ padding: 2rem 3rem;
         }
 
         
+    }
+
+    /* 展示模块 */
+    .block-showcase__image > img {
+        width: 100%;
+
+    }
+    @media screen and (min-width:768px) {
+        .block-showcase .grid{
+            grid-template-columns: 50% 50%
+        }
+        .block-showcase__image{
+          
+            justify-self: right;
+
+        }
+        
+    }
+    
+    .block-showcase > img {
+        width: auto;
+        max-width: 700px;
     }
