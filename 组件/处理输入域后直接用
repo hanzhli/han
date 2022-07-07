@@ -1,92 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="so difficult" />
-    <meta property="og:title" content="Moshify..." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>it's a new word</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="nav collapsible">
-        <a class="nov__brand" href="/"
-          ><img src="/img/logo.svg" alt="首页标签"
-        /></a>
-        <svg class="icon icon--white nav__toggler">
-          <use :href="img/sprite.svg#menu"></use>
-        </svg>
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Hosting</a></li>
-          <li class="nav__item"><a href="#">VPS</a></li>
-          <li class="nav__item"><a href="#">Domain</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">
-            Deploy your website in less than 60 seconds.
-          </p>
-          <a href="" class="btn btn--accent btn--stretched">Get STARTED</a>
-        </header>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="img/banner1x.webp 1x, img/banner2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="img/banner1x.png 1x, img/banner2x.png 2x"
-          />
-          <img class="hero__image" src="/img/banner.png" alt="装饰图" />
-        </picture>
-      </div>
-    </section>
-    <section class="bloke container block-domain">
-      <header class="block__header">
-        <h2>The best webhosting Starting at per month</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quia
-          totam natus accusamus neque animi
-        </p>
-      </header>
-      <div class="input-group">
-        <input
-          type="text"
-          class="input"
-          placeholder="Enter domain name here..."
-        />
-        <button class="btn btn--accent">
-          <svg class="icon icon--white">
-            <use :href="img/sprite.svg#search"></use>
-          </svg>
-          Search
-        </button>
-      </div>
-      <ul class="list block-domain__prices">
-        <li><span class="badge badge--secondary">.com $9.26</span></li>
-        <li>.sg $7.91</li>
-        <li>.space $12.98</li>
-        <li>.info $14.15</li>
-        <li>.net $16.15</li>
-        <li>.xyz $10.15</li>
-        <!-- <li>More</li> -->
-      </ul>
-    </section>
-    <section class="block container block-plans">
+ <section class="block container block-plans">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -162,7 +74,7 @@
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use :href="img/sprite.svg#easy"></use>
+              <use xlink:href="img/sprite.svg#easy"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy to Use</h3>
@@ -191,7 +103,7 @@
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use :href="img/sprite.svg#computer"></use>
+              <use xlink:href="img/sprite.svg#computer"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy to Use</h3>
@@ -219,7 +131,7 @@
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use :href="img/sprite.svg#settings"></use>
+              <use xlink:href="img/sprite.svg#settings"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy to Use</h3>
@@ -252,7 +164,7 @@
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
-              <use :href="img/sprite.svg#clock"></use>
+              <use xlink:href="img/sprite.svg#clock"></use>
             </svg>
           </span>
           <h3 class="feature__heading">Super Easy to Use</h3>
@@ -297,7 +209,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
-                  <use :href="img/sprite.svg#snap"></use>
+                  <use xlink:href="img/sprite.svg#snap"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -313,7 +225,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
-                  <use :href="img/sprite.svg#growth"></use>
+                  <use xlink:href="img/sprite.svg#growth"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -329,7 +241,7 @@
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
-                  <use :href="img/sprite.svg#wordpress"></use>
+                  <use xlink:href="img/sprite.svg#wordpress"></use>
                 </svg>
               </div>
               <div class="media__body">
@@ -360,7 +272,7 @@
               <img src="/img/testimonial.jpg" alt="一位满意而且微笑的客户" />
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
-                  <use :href="img/sprite.svg#quotes"></use>
+                  <use xlink:href="img/sprite.svg#quotes"></use>
                 </svg>
               </span>
             </div>
@@ -377,7 +289,7 @@
                 <div class="media">
                   <div class="media__image">
                     <svg class="icon icon--primary quote__line">
-                      <use :href="img/sprite.svg#line"></use>
+                      <use xlink:href="img/sprite.svg#line"></use>
                     </svg>
                   </div>
                   <div class="media__body">
@@ -394,12 +306,12 @@
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
-          <div class="collapsible__header">
+          <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">PRODUCTS</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use :href="img/sprite.svg#chevron"></use>
+              <use xlink:href="img/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="class">
               <li><a href="#">WordPress Hosting</a></li>
@@ -411,12 +323,12 @@
           </div>
         </section>
         <section class="collapsible collapsible--expanded footer__section">
-          <div class="collapsible__header">
+          <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">COMPANY</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use :href="img/sprite.svg#chevron"></use>
+              <use xlink:href="img/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
@@ -430,12 +342,12 @@
           </div>
         </section>
         <section class="collapsible collapsible--expanded footer__section">
-          <div class="collapsible__header">
+          <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">SUPPORT</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use :href="img/sprite.svg#chevron"></use>
+              <use xlink:href="img/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact</a></li>
@@ -448,12 +360,12 @@
           </div>
         </section>
         <section class="collapsible collapsible--expanded footer__section">
-          <div class="collapsible__header">
+          <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">DOMAINS</h2>
             <svg class="icon icon--white collapsible__chevron">
-              <use :href="img/sprite.svg#chevron"></use>
+              <use xlink:href="img/sprite.svg#chevron"></use>
             </svg>
-          </div>
+          </header>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Domain Checker</a></li>
@@ -464,10 +376,10 @@
             </ul>
           </div>
         </section>
-        <div class="footer__brand">
+        <section class="footer__brand">
           <img src="/img/logo.svg" alt="logo" />
           <p class="footer__copyright">Copyright 2022 han hamedan</p>
-        </div>
+        </section>
       </div>
     </footer>
 
